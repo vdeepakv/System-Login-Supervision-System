@@ -1,38 +1,50 @@
-# System-Login-Supervision-System
-The goal of my project is to replace the traditional handwritten login register process in a college laboratory with an efficient and automated digital system. This transition can offer several benefits, such as accuracy, time-saving, and easier data management. Using technologies like HTML, CSS, JavaScript, Java, and SQL.
+# System-Login Supervision System
 
-//connect all the pieces of my project, you'll need to follow these steps:
+The System-Login Supervision System project aims to transform the conventional college laboratory handwritten login register process into an efficient and automated digital system.
 
-1. **HTML, CSS, JavaScript:**
-   - Create the HTML pages for login (`login.html`) and registration (`register.html`).
-   - Add the CSS styles in a file named `styles.css`.
-   - Add the JavaScript code in a file named `script.js`.
-   - Ensure that the form submissions and client-side validation are working as expected.
+## Technologies Used
 
-2. **Java Servlets:**
-   - Create two Java servlets, `LoginServlet.java` and `RegisterServlet.java`
-   - Set up your development environment with a Servlet container 'Apache Tomcat'.
-   - Deploy your servlets on the server.
+- Front-End: HTML, CSS, JavaScript
+- Back-End: Java (Servlets)
+- Database: SQL (MySQL)
+- Deployment: Apache Tomcat (Servlet container)
 
-3. **SQL Database:**
-   - Set up a database server 'MySQL'.
-   - Create the necessary tables by running the SQL script provided in `CreateTable.sql` on your database.
+## Project Structure
 
-4. **Database Connection in Java:**
-   - Modify your servlets' database connection code to use the appropriate database credentials and connection URL.
+- **Front-End:**
+  - `login.html`: Login page HTML.
+  - `register.html`: Registration page HTML.
+  - `styles.css`: Stylesheet for the HTML pages.
+  - `script.js`: JavaScript for form handling and AJAX requests.
 
-5. **Wiring Everything Together:**
-   - In your `LoginServlet.java`, connect to the database to validate user credentials during the login process.
-   - In your `RegisterServlet.java`, connect to the database to store user registration data.
-   - Make sure to handle exceptions, close database connections properly, and implement secure practices (e.g., hashing passwords).
+- **Back-End:**
+  - `LoginServlet.java`: Java Servlet for handling login requests.
+  - `RegisterServlet.java`: Java Servlet for handling registration requests.
 
-6. **Deployment:**
-   - Deploy your HTML, CSS, JavaScript, and image files on a web server.
-   - Deploy your Java servlets on a Servlet container 'Apache Tomcat'.
-   - Ensure that your servlets are correctly mapped in the `web.xml` configuration.
+- **Database:**
+  - `CreateTable.sql`: SQL script to create necessary tables (`users` and `login_records`).
 
-7. **Testing:**
-   - Test your project by accessing the login and registration pages through a web browser.
-   - Verify that user registration, login, and database operations are working as expected.
+## Getting Started
+
+1. **Database Setup:**
+   - Set up a MySQL database server.
+   - Run the SQL script in `CreateTable.sql` to create the required tables.
+
+2. **Deployment:**
+   - Deploy your Java Servlets on Apache Tomcat.
+
+3. **Front-End:**
+   - Place the HTML, CSS, and JavaScript files in a web server directory.
+
+4. **Configure Endpoints:**
+   - Update AJAX requests in `script.js` to point to your servlet endpoints.
+
+## Features
+
+- User Registration: Allows users to create accounts with usernames, emails, and passwords.
+- User Login: Provides a secure login mechanism with hashed passwords.
+- Login Records: Keeps a record of successful and failed login attempts.
+
+## Note
 
 Remember, this is my experience. steps are slightly vary for your system configurations, software versions, and your coding styles.
